@@ -6,7 +6,7 @@ on:
     - master
 
 jobs:
-  commentStagingLinkToPR:
+  openPullRequestJob:
     if: (github.event_name == 'pull_request' && github.event.action != 'closed') 
     runs-on: ubuntu-latest
     steps:
